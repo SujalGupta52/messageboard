@@ -39,7 +39,7 @@ body {
 }
 
 .card {
-  font-family: "Shadows Into Light", cursive;
+  font-family: "Shadowspx Into Light", cursive;
   min-height: 15rem;
   min-width: 15rem;
   background-color: #fcdc94;
@@ -53,7 +53,8 @@ body {
 
 .message {
   flex: 1;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  overflow-y: auto;
 }
 
 .author {
