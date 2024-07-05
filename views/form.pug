@@ -1,0 +1,13 @@
+extend formLayout 
+block content 
+    .title Post a new message 
+    form(action="/new", method="post") 
+      label(for="author") Username:
+      br
+      input(type="text", id="author", name="author", required)
+      br
+      label(for="message") Message:
+      br
+      input(type="text", id="message", name="messageText", required)
+      br
+      button(type="submit") Submit

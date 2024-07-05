@@ -1,0 +1,66 @@
+:root {
+  --background-color: #fcffea;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: var(--background-color);
+}
+
+.title {
+  font-family: "Righteous", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+form {
+  align-self: center;
+  font-family: "Playwrite DE Grund", cursive;
+  font-size: 1.5rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  width: 30vw;
+  height: 50px;
+  font-size: 2rem;
+  background-color: rgb(191, 255, 233);
+  border: 3px solid rgb(0, 170, 255);
+  border-radius: 5px;
+}
+
+button {
+  font-family: "Playwrite DE Grund", cursive;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 5px;
+  width: 30vw;
+  height: 50px;
+  margin-top: 20px;
+  background-color: rgb(179, 255, 179);
+  border-radius: 20px;
+}
+
+@media (max-width: 600px) {
+  input {
+    width: 50vw;
+    height: 30px;
+  }
+  button {
+    width: 50vw;
+  }
+}
