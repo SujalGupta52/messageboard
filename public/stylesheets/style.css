@@ -1,8 +1,87 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+:root {
+  --background-color: #c8cfa0;
 }
 
-a {
-  color: #00B7FF;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: var(--background-color);
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.container {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 15rem);
+  grid-template-rows: repeat(auto-fill, 15rem);
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  min-height: 15rem;
+  min-width: 15rem;
+  background-color: #fcdc94;
+  text-decoration: none;
+  color: #000;
+  padding: 2rem;
+  box-shadow: 6px 7px 2px 0px #6b6969;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  flex: 1;
+  font-size: 1.5rem;
+}
+
+.author {
+  align-self: end;
+  font-weight: bold;
+}
+
+form {
+  align-self: center;
+  position: fixed;
+  bottom: 3rem;
+}
+
+button {
+  font-size: 2rem;
+  border: 3px solid #090909;
+  border-radius: 10px;
+  background: #78aba8;
+  padding: 15px;
+}
+
+.container .card:nth-child(2n + 1) {
+  background-color: #f7bfad;
+}
+
+.container .card:nth-child(5n + 1) {
+  background-color: #a8ffa5;
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 60%;
+  }
+  .container {
+    gap: 4rem;
+  }
 }

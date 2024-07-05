@@ -1,5 +1,14 @@
 extends layout
-
 block content
-  h1= title
-  p Welcome to #{title}
+  .title My Message Board
+  .container 
+    each message in messages 
+      -
+      .card(style=`transform:rotate(${Math.round(Math.random() * 10) - 5}deg)`)
+        .message= message.text
+        .author.
+          -
+          #{message.user} <br>
+          &nbsp;#{message.added.toLocaleDateString()}
+  form(action="/new", method="get")
+    button(type="submit") Post a new message
