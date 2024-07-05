@@ -1,4 +1,4 @@
-# Local Library
+# Message Board
 
 A small message board application created with ExpressJS and MongoDB
 
@@ -9,3 +9,9 @@ A small message board application created with ExpressJS and MongoDB
 - `npm install` to install the dependencies
 - `npm run serverstart` to start the server
 - Go to http://localhost:3000 to access the website
+
+## Screenshots
+
+![Screenshot 1](./Screenshots/image.png)
+
+![Screenshot 1](./Screenshots/image2.png)
