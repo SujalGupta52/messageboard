@@ -39,7 +39,8 @@ body {
 }
 
 .card {
-  font-family: "Shadowspx Into Light", cursive;
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 600;
   min-height: 15rem;
   min-width: 15rem;
   background-color: #fcdc94;
