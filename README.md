@@ -2,6 +2,8 @@
 
 A small message board application created with ExpressJS and MongoDB
 
+Live link: https://messageboard-cf85.onrender.com (As its hosted on free tier of Render, it may or may not work)
+
 ## To run:
 
 - Clone the repository
